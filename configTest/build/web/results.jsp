@@ -67,35 +67,51 @@
         
         
         %>
+ <link rel="stylesheet" type="text/css"href="styles.css"/>
+ <div class="div1">
         <body>
         <h1>Results!</h1>
-        <div class="div1">
         <table>
             <tbody>
                 <tr>
                     <td>Total Hours Worked:</td>
-                    <th></th>
                     <td><%= hoursWorked %></td>
+                </tr>
+                <tr>
                     <td># of Overtime Hours:</td>
                     <td><%= overtime %></td>
-                    <td>Overtime Hourly Rate:</td>
+                </tr>
+                <tr>
+                    <td>Overtime Hourly Rate: </td>
                     <td><%= overtimeRate %></td>
+                </tr>
+                <tr>
                     <td>Gross Pay:</td>
                     <td><%= grossPay %></td>
-                     <td>Tax Amount:</td>
+                </tr>
+                <tr>
+                    <td>Tax Amount:</td>
                     <td><%= taxAmount %></td>
+                </tr>
+                <tr>
                     <td>Wage:</td>
                     <td><%= hourlyPay %></td>
-                    <td># Pre-tax Deductions:</td>
+                </tr>
+                <tr>
+                    <td>Pre-tax Deductions:</td>
                     <td><%= pretaxDeduct %></td>
+                </tr>
+                <tr>
                     <td>Post Tax Deduction:</td>
                     <td><%= posttaxDeduct %></td>
+                </tr>
+                <tr>
                     <td>Net Pay:</td>
                     <td><%= netPay %></td>
                 </tr>
             </tbody>
         </table>
-        </div>
+  </div>
                
     </body>
 </html>
