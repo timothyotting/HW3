@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css"href="styles.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Results</title>
     </head>
@@ -16,10 +17,10 @@
         Double hourlyPay = Double.parseDouble(request.getParameter("pay"));
         Double pretaxDeduct = Double.parseDouble(request.getParameter("prededuct"));
         Double posttaxDeduct = Double.parseDouble(request.getParameter("postdeduct"));
-        Double overtime;
-        Double overtimeRate;
-        Double overtimePay;
-        Double grossPay;
+        Double overtime = 0.0;
+        Double overtimeRate = 0.0;
+        Double overtimePay = 0.0;
+        Double grossPay = 0.0;
         Double taxAmount;
         Double netPay;
         Double regularHours;
@@ -36,7 +37,6 @@
             overtimeRate = (hourlyPay*1.5);
             overtimePay = (overtime*overtimeRate);
             regularPay = (regularHours*hourlyPay);
-            regularPay = (regularHours*regularPay);
             grossPay = (regularPay + overtimePay);
         }
         else
@@ -52,7 +52,7 @@
         }
         else
         {
-            taxAmount = (taxablePay*.22);
+            taxAmount = (taxablePay * .22);
         }
         
         postTaxPay = (taxablePay-taxAmount);
@@ -69,11 +69,21 @@
         %>
         <body>
         <h1>Results!</h1>
+        <div class="div1">
         <table>
             <tbody>
                 <tr>
                     <td>Total Hours Worked:</td>
+                    <th></th>
                     <td><%= hoursWorked %></td>
+                    <td># of Overtime Hours:</td>
+                    <td><%= overtime %></td>
+                    <td>Overtime Hourly Rate:</td>
+                    <td><%= overtimeRate %></td>
+                    <td>Gross Pay:</td>
+                    <td><%= grossPay %></td>
+                     <td>Tax Amount:</td>
+                    <td><%= taxAmount %></td>
                     <td>Wage:</td>
                     <td><%= hourlyPay %></td>
                     <td># Pre-tax Deductions:</td>
@@ -85,5 +95,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
+               
     </body>
 </html>

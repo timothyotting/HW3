@@ -8,3 +8,7 @@ and open the template in the editor.
     Author     : otter
 */
 
+.div1
+table, th, td{
+    border: 1px black;
+}
