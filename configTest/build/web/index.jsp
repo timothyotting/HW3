@@ -15,5 +15,7 @@
         <h1>Hello World!</h1>
         Today is: <%= new java.util.Date() .toString()%>
         
+        <a href="Form.jsp"> Salary Calculator </a>
+        
     </body>
 </html>
