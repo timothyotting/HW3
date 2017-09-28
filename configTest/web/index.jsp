@@ -12,7 +12,7 @@
         <title>Calculator</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Calculate your salary!!!</h1>
         Today is: <%= new java.util.Date() .toString()%>
         
         <a href="Form.jsp"> Salary Calculator </a>
