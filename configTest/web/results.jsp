@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css"href="styles.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Results</title>
     </head>
@@ -67,8 +67,6 @@
         
         
         %>
- <link rel="stylesheet" type="text/css"href="styles.css"/>
- <div class="div1">
         <body>
         <h1>Results!</h1>
         <table>
@@ -110,8 +108,6 @@
                     <td><%= netPay %></td>
                 </tr>
             </tbody>
-        </table>
-  </div>
-               
+        </table>  
     </body>
 </html>
