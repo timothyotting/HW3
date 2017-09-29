@@ -45,7 +45,7 @@
             </table>
           
             <input type="reset" value="Clear" id="clear"/>
-            <input type="submit" value="Submit" id="submit"
+            <input type="submit" value="Submit" id="submit"/>
         </form>
         
     </body>
